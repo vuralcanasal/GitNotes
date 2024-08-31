@@ -112,5 +112,27 @@ Therefore, we committed 02_Branche.md to the repository with its own message. We
 ## Git Log
 `git log` is a command to show the committed changes. If you use --name-only option you can see them with the related files name.
 `git log --name-only`
-
-
+> commit c57ef243a08cca97c14c5a52f632a69f22c0c607 (HEAD -> main)
+> Author: vuralcanasal <vuralcanasal@gmail.com>
+> Date:   Sat Aug 31 18:15:31 2024 +0300
+>
+>    fixed typo mistakes for 01_Init_Add_Commit.md, and create empty 03_Git_Diff.md
+>
+> 01_Init_Add_Commit.md
+> 03_Git_Diff.md
+>
+> commit 50f3897b371069c789860a7c41aa7d304c318e8a (origin/main)
+> Author: vuralcanasal <vuralcanasal@gmail.com>
+> Date:   Sat Aug 31 17:26:18 2024 +0300
+>
+>    fix typo mistake - continue
+>
+> 01_Init_Add_Commit.md
+>
+> commit cbbb037444badc7e195d8907829e55a993408e0e
+> Author: vuralcanasal <vuralcanasal@gmail.com>
+> Date:   Sat Aug 31 17:13:32 2024 +0300
+>
+>    git init / git add / git commit sections
+>
+> 01_Init_Add_Commit.md
