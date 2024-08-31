@@ -78,7 +78,7 @@ We use `git commit` command to commit chages from staging are to repository, and
 
 If you use only `git commit`, it will commit all staged to repository, and open a text editor for your commit message. Instead of it, you can use "-m" option to provide your message `git commit -m "<your message>"`.
 
-Now, we can contionu our example in the git add part. Now, we have two untraked file which are 01_Init_Add_Commit.md and 02_Branche.md. Firstly, we add 02_Branche.md to staging area, then commit it to repository. After that, we will do same thing our 01_Init_Add_Commit.md.
+Now, we can continue our example in the git add part. Now, we have two untraked file which are 01_Init_Add_Commit.md and 02_Branche.md. Firstly, we add 02_Branche.md to staging area, then commit it to repository. After that, we will do same thing our 01_Init_Add_Commit.md.
 
 `git add 02_Branche.md`
 `git status`
