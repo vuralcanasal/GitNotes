@@ -1,12 +1,12 @@
 # Git Init
-To create a new git repository, `git init` command is used. You need to initialize a repo before starting a new project related with Git. Git should be initialized one time per project. Also, it should be initialized on the top level of the project. 
+To create a new Git repository, use the `git init `command. You need to initialize a repository before starting a new project with Git. Git should be initialized only once per project and should be done at the top level of the project directory. 
 
 __DO NOT INIT A REPO INSIDE OF A REPO__
 
-To check if Git is initialized for a project use `git status` command. If it is not initialized, the output message would be like this:
+To check if Git is initialized for a project, use `git status` command. If Git is not initialized, the output message will be:
 > not a git repository (or any of the parent directories): .git
 
-Example of Git init for a new project:
+Example of `git init` for a new project:
 ```
 mkdir new_project
 cd new_project
@@ -14,7 +14,7 @@ git init
 ```
 
 ## .git Folder
-This is a hidden file created by `git init`. You can see it by typing `ls -a`. You can see all related material "logs, branches, description, configuration, etc" in this hidden folder ".git". If you remove this file, you lose all the historical data in your project.
+This is a hidden folder created by `git init`. You can view it by typing `ls -a`. The .git folder contains all related data, such as logs, branches, descriptions, configurations, and more. If you delete this folder, you will lose all historical data for your project.
 
 _The basic workflow for Git is:_
 1. Work on project (working directory)
@@ -25,7 +25,7 @@ _The basic workflow for Git is:_
    - Commit added changes with a comment by `git commit` command
 
 # Git Add
-After working on your project, you can see changed files in `git status`:
+After working on your project, you can see the changed files by using `git status`:
 > On branch main
 > Your branch is up to date with 'origin/main'.
 >
@@ -38,13 +38,13 @@ After working on your project, you can see changed files in `git status`:
 
 As you see in the output, you can use `git add <file1>, <file2>, ..., <file(n)>`
 
-Now, the files are untacked. We will move our files into staging area (tranked files) by using git add. In this movement, we have two different files, so we need to group them by moving into staging area.
+Currently, the files are untracked. To move them into the staging area (tracked files), use the `git add` command. Since we have two different files, you will need to add them both to the staging area.
 
 The steps:
-1. move 01_Init_Add_Commit.md file into staging area.
-2. commit 01_Init_Add_Commit.md into repository with comment "git init / git add / git commit sections"
-3. move 02_Branche.md file into stagin area.
-4. commit 02_Branche.md file into repositoru with comment "create empty 02_Branche.md file"
+1. move 01_Init_Add_Commit.md file to staging area.
+2. commit 01_Init_Add_Commit.md to repository with comment "git init / git add / git commit sections"
+3. move 02_Branche.md file to stagin area.
+4. commit 02_Branche.md file to repositoru with comment "create empty 02_Branche.md file"
 
 After step 1 - adding 01_Init_Add_Commit.md file, the output of `git status':
 > On branch main
@@ -58,7 +58,7 @@ After step 1 - adding 01_Init_Add_Commit.md file, the output of `git status':
 >  (use "git add <file>..." to include in what will be committed)
 >   	02_Branche.md
 
-Now, we can commit 01_Init_Add_Commit.md with its comment, but we recognized a mistake on the file, and want to fix it. As you can see on the output, we can move the file to unstage by:
+Now, we can commit 01_Init_Add_Commit.md with a comment. However, if you notice a mistake in the file and want to fix it, you can unstage the file by using the following command:
 ```
 git restore --staged 01_Init_Add_Commit.md
 ```
@@ -74,11 +74,11 @@ The output of git status again:
 > nothing added to commit but untracked files present (use "git add" to track)
 
 # Git Commit 
-We use `git commit` command to commit chages from staging are to repository, and create a snapshot. By using commit, we need a message summarizing the changes.
+We use `git commit` command to commit chages from staging are to repository and create a snapshot. When commiting, you need a message summarizing the changes.
 
-If you use only `git commit`, it will commit all staged to repository, and open a text editor for your commit message. Instead of it, you can use "-m" option to provide your message `git commit -m "<your message>"`.
+If you use only `git commit`, it will commit all staged to repository, and open a text editor for your commit message. Alternatively, you can use "-m" option to provide your message diretly `git commit -m "<your message>"`.
 
-Now, we can continue our example in the git add part. Now, we have two untraked file which are 01_Init_Add_Commit.md and 02_Branche.md. Firstly, we add 02_Branche.md to staging area, then commit it to repository. After that, we will do same thing our 01_Init_Add_Commit.md.
+Continuing with our example in the git add section, we have two untraked files which are 01_Init_Add_Commit.md and 02_Branche.md. First, add 02_Branche.md to the staging area and commit it to repository. After that,repeat the process for 01_Init_Add_Commit.md.
 
 `git add 02_Branche.md`
 `git status`
@@ -107,4 +107,10 @@ On branch main
 >
 > nothing added to commit but untracked files present (use "git add" to track)
 
-Therefore, we commited 02_Branche.md to repository with its own message. We can use `git add` and `git commit` to group works and commit them to repository with our own messages.
+Therefore, we committed 02_Branche.md to the repository with its own message. We can use `git add` and `git commit` to stage and commit changes to the repository with their own messages.
+
+## Git Log
+`git log` is a command to show the committed changes. If you use --name-only option you can see them with the related files name.
+`git log --name-only`
+
+
