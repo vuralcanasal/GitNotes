@@ -40,9 +40,6 @@ To include a file that would otherwise be ignored, prefix the pattern with an ex
 >
 > !important.log
 
-# Include a specific file that would otherwise be ignored
-!important.log
-
 # Git Add
 After working on your project, you can see the changed files by using `git status`:
 > On branch main
