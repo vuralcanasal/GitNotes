@@ -136,3 +136,11 @@ Therefore, we committed 02_Branche.md to the repository with its own message. We
 >    git init / git add / git commit sections
 >
 > 01_Init_Add_Commit.md
+
+## Git Commit --amend
+If you forgot to commit a file, you can use `git commit --amend` to add it to your last commit. For example, if you committed file1 and file2 but forgot file3, just stage file3 and run:
+```
+git add file3
+git commit --amend
+```
+This will include file3 in your last commit, and you can keep the same commit message or write a new one.
