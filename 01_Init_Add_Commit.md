@@ -143,4 +143,4 @@ If you forgot to commit a file, you can use `git commit --amend` to add it to yo
 git add file3
 git commit --amend
 ```
-This will include file3 in your last commit, and you can keep the same commit message or write a new one.
+This will include file3 in your last commit, and you can keep the same commit message or write a new one. Also, you can use `git commit --amend` to change your last commit message.
