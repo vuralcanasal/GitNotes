@@ -24,6 +24,20 @@ _The basic workflow for Git is:_
 3. Commit (repository)
    - Commit added changes with a comment by `git commit` command
 
+## .gitignore
+A ".gitignore" file tells Git which files or directories to ignore in a project. This is useful for keeping sensitive information, like secrets or API keys, and unnecessary files, like dependencies, out of your repository. Examples of ".gitignore" entires:
+* .FileName --> ignore files named .FileName
+* FolderName/ --> ignore an entire directory
+* *.extension --> ignore any files with the .extension
+
+You can add comments in a ".gitignore" file by starting the line with a "#".
+To include a file that would otherwise be ignored, prefix the pattern with an exclamation mark "!".
+> # Ignore all .log files
+> *.log
+
+# Include a specific file that would otherwise be ignored
+!important.log
+
 # Git Add
 After working on your project, you can see the changed files by using `git status`:
 > On branch main
