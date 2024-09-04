@@ -37,18 +37,9 @@ File you need to fix:
 > <<<<<
 > >>>>>>> merge
 
-<<<<<<< HEAD
 You need to resolve it manually. Decide which content you want to keep in each conflict, edit and save the file.
 
 Why there is a conflicted:
 * Somebody modified a file, and somebody deleted the same file.
 * Somebody edit some lines of some files, and somebody edit same lines of the the same files or one of the same files.
 
-=======
-You need to resolve it manually, and save the file.
-
-
-
-
-tests
->>>>>>> merge
