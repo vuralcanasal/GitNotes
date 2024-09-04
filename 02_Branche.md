@@ -34,12 +34,12 @@ Here is the output example of a merge conflic example:
 > Automatic merge failed; fix conflicts and then commit the result.
 
 File you need to fix:
-> <<<<<<< HEAD
-> The content from your current HEAD is displayed between:
-> <<<<<<<<< HEAD and =============
-> =======
-> The content from your the branch you try to merge is displayed between:
-> ============ and >>>>>>>>>>>
+> <<<<<
 > >>>>>>> merge
 
 You need to resolve it manually, and save the file.
+
+
+
+
+tests
