@@ -97,6 +97,7 @@ If you use only `git commit`, it will commit all staged to repository, and open 
 Continuing with our example in the git add section, we have two untraked files which are 01_Init_Add_Commit.md and 02_Branche.md. First, add 02_Branche.md to the staging area and commit it to repository. After that,repeat the process for 01_Init_Add_Commit.md.
 
 `git add 02_Branche.md`
+
 `git status`
 > On branch main
 > Your branch is up to date with 'origin/main'.
