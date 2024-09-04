@@ -37,8 +37,8 @@ File you need to fix:
 ```
 > <<<<<<< HEAD
 > The content from your current HEAD is displayed between:
-> <<<<<<<<< HEAD and =============
-> 
+> <<<<<<<<< HEAD and ============
+> =======
 > The content from your the branch you try to merge is displayed between:
 > ============ and >>>>>>>>>>>
 > >>>>>>> merge
