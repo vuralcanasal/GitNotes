@@ -22,6 +22,24 @@ __If you switch to another branch without committed your work, you can lost your
 # Git Merge
 You can work on different features for your project in parallel thanks to branches. When you need to combine these features, `git merge` will help you. You always merge to the current HEAD branch. It means that you need to switch to master branch if you want to merge any branch into the master branch. In sortly, you switch to the branch you want to merge into, and type `git merge <the branch you want to merge>`.
 
+
 Merge conflicts:
-The content from your current HEAD is displayed between:
-<<<<<<<<< HEAD and =============
+
+Here is the output example of a merge conflic example:
+
+`git merge <branch name>` command and the output:
+> git merge merge
+> Auto-merging 02_Branche.md
+> CONFLICT (content): Merge conflict in 02_Branche.md
+> Automatic merge failed; fix conflicts and then commit the result.
+
+File you need to fix:
+> <<<<<<< HEAD
+> The content from your current HEAD is displayed between:
+> <<<<<<<<< HEAD and =============
+> =======
+> The content from your the branch you try to merge is displayed between:
+> ============ and >>>>>>>>>>>
+> >>>>>>> merge
+
+You need to resolve it manually, and save the file.
