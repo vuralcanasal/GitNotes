@@ -10,7 +10,7 @@ Head is a pointer refering to current location in your repository. There can be 
 # Git Branch
 `git branch` to view your existing branches.
 `git branch <new branch name>` to create new branch. You are still on the current branch after this.
-`git branch switch <branch name>` to switch to a branch. Also, you can create a new branch and switch to it by `git switch -c <new branch name>`.
+`git switch <branch name>` to switch to a branch. Also, you can create a new branch and switch to it by `git switch -c <new branch name>`.
 `git checkout <branch name>` to switch to a branch, so it is older version of switch. Both work.
 
 __If you switch to another branch without committed your work, you can lost your work. Always commit your work before switching branches to avoid losing changes.__
@@ -21,3 +21,7 @@ __If you switch to another branch without committed your work, you can lost your
 
 # Git Merge
 You can work on different features for your project in parallel thanks to branches. When you need to combine these features, `git merge` will help you. You always merge to the current HEAD branch. It means that you need to switch to master branch if you want to merge any branch into the master branch. In sortly, you switch to the branch you want to merge into, and type `git merge <the branch you want to merge>`.
+
+Merge conflicts:
+The content from your current HEAD is displayed between:
+<<<<<<<<< HEAD and =============
