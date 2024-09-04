@@ -38,7 +38,7 @@ File you need to fix:
 > <<<<<<< HEAD
 > The content from your current HEAD is displayed between:
 > <<<<<<<<< HEAD and =============
-> =======
+> 
 > The content from your the branch you try to merge is displayed between:
 > ============ and >>>>>>>>>>>
 > >>>>>>> merge
@@ -46,7 +46,7 @@ File you need to fix:
 
 You need to resolve it manually. Decide which content you want to keep in each conflict, edit and save the file.
 
-Why there is a conflicted:
+Why is there a conflicted?
 * Somebody modified a file, and somebody deleted the same file.
 * Somebody edit some lines of some files, and somebody edit same lines of the the same files or one of the same files.
 
