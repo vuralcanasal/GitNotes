@@ -19,3 +19,5 @@ __If you switch to another branch without committed your work, you can lost your
 
 `git branch -m <branch rename>` to rename a branch. Actully, you move the branch to new name. You need to be on the branch you want to rename.
 
+# Git Merge
+You can work on different features for your project in parallel thanks to branches. When you need to combine these features, `git merge` will help you. You always merge to the current HEAD branch. It means that you need to switch to master branch if you want to merge any branch into the master branch. In sortly, you switch to the branch you want to merge into, and type `git merge <the branch you want to merge>`.
