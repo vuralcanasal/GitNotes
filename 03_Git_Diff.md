@@ -20,7 +20,7 @@ We can see changes between branches, files, working directory, etc.
 >
 > +We can see changes between branches, files, working directory, etc.
 >
-> +
+> \+
 >
 > +`git diff` shows the changes in your working directory.
 >
