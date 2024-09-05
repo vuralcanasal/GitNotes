@@ -4,6 +4,7 @@ You can use `git checkout` to create new branches, switch to another branch, res
 `git checkout commit <commith-hash>` to view a previous commit.
 
 > __DETACHED HEAD__
+>
 > You are in "detached HEAD" state. You can look around, make experimental changes and commit them, and you can discard any commiys you make in this state without impacting any branches by switching back to a branch.
 
 This means HEAD points at that commit not at the branch.
