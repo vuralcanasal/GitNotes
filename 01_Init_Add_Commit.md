@@ -48,7 +48,7 @@ After working on your project, you can see the changed files by using `git statu
 > Untracked files:
 >   (use "git add <file>..." to include in what will be committed)
 >       01_Init_Add_Commit.md
->       02_Branche.md
+>       02_Branches.md
 >
 > nothing added to commit but untracked files present (use "git add" to track)
 
@@ -59,8 +59,8 @@ Currently, the files are untracked. To move them into the staging area (tracked 
 The steps:
 1. move 01_Init_Add_Commit.md file to staging area.
 2. commit 01_Init_Add_Commit.md to repository with comment "git init / git add / git commit sections"
-3. move 02_Branche.md file to stagin area.
-4. commit 02_Branche.md file to repositoru with comment "create empty 02_Branche.md file"
+3. move 02_Branches.md file to stagin area.
+4. commit 02_Branches.md file to repositoru with comment "create empty 02_Branches.md file"
 
 After step 1 - adding 01_Init_Add_Commit.md file, the output of `git status':
 > On branch main
@@ -72,7 +72,7 @@ After step 1 - adding 01_Init_Add_Commit.md file, the output of `git status':
 >
 >Untracked files:
 >  (use "git add <file>..." to include in what will be committed)
->   	02_Branche.md
+>   	02_Branches.md
 
 Now, we can commit 01_Init_Add_Commit.md with a comment. However, if you notice a mistake in the file and want to fix it, you can unstage the file by using the following command:
 ```
@@ -85,7 +85,7 @@ The output of git status again:
 > Untracked files:
 >   (use "git add <file>..." to include in what will be committed)
 >       01_Init_Add_Commit.md
->       02_Branche.md
+>       02_Branches.md
 >
 > nothing added to commit but untracked files present (use "git add" to track)
 
@@ -94,9 +94,9 @@ We use `git commit` command to commit chages from staging are to repository and 
 
 If you use only `git commit`, it will commit all staged to repository, and open a text editor for your commit message. Alternatively, you can use "-m" option to provide your message diretly `git commit -m "<your message>"`.
 
-Continuing with our example in the git add section, we have two untraked files which are 01_Init_Add_Commit.md and 02_Branche.md. First, add 02_Branche.md to the staging area and commit it to repository. After that,repeat the process for 01_Init_Add_Commit.md.
+Continuing with our example in the git add section, we have two untraked files which are 01_Init_Add_Commit.md and 02_Branches.md. First, add 02_Branches.md to the staging area and commit it to repository. After that,repeat the process for 01_Init_Add_Commit.md.
 
-`git add 02_Branche.md`
+`git add 02_Branches.md`
 
 `git status`
 > On branch main
@@ -104,15 +104,15 @@ Continuing with our example in the git add section, we have two untraked files w
 >
 >Changes to be committed:
 >   (use "git restore --staged <file>..." to unstage)
->       new file:   02_Branche.md
+>       new file:   02_Branches.md
 >
 >Untracked files:
 >  (use "git add <file>..." to include in what will be committed)
 >   	01_Init_Add_Commit.md
-`git commit -m "Create an empty 02_Branche.md file"`
-> [main 9f27a05] Create an empty 02_Branche.md file
+`git commit -m "Create an empty 02_Branches.md file"`
+> [main 9f27a05] Create an empty 02_Branches.md file
 >  1 file changed, 0 insertions(+), 0 deletions(-)
->  create mode 100644 02_Branche.md
+>  create mode 100644 02_Branches.md
 `git status`
 On branch main
 >Your branch is ahead of 'origin/main' by 1 commit.
@@ -124,7 +124,7 @@ On branch main
 >
 > nothing added to commit but untracked files present (use "git add" to track)
 
-Therefore, we committed 02_Branche.md to the repository with its own message. We can use `git add` and `git commit` to stage and commit changes to the repository with their own messages.
+Therefore, we committed 02_Branches.md to the repository with its own message. We can use `git add` and `git commit` to stage and commit changes to the repository with their own messages.
 
 ## Git Log
 `git log` is a command to show the committed changes. If you use --name-only option you can see them with the related files name.

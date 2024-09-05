@@ -5,7 +5,7 @@ Branches are pointers to specific snapshots of your changes. You can work on mul
 The default branch name is "master". It is not a special branch. It is like any other branch. For example, GitHub renamed the default branch from "master" to "main", but the default Git branch name is "master".
 
 ## HEAD
-Head is a pointer refering to current location in your repository. There can be multiple branchs and commits in a project, and head shows you where you are.
+Head is a pointer refering to current location in your repository. There can be multiple branches and commits in a project, and head shows you where you are.
 
 # Git Branch
 `git branch` to view your existing branches.
@@ -29,8 +29,8 @@ Here is the output example of a merge conflic example:
 
 `git merge <branch name>` command and the output:
 > git merge merge
-> Auto-merging 02_Branche.md
-> CONFLICT (content): Merge conflict in 02_Branche.md
+> Auto-merging 02_Branches.md
+> CONFLICT (content): Merge conflict in 02_Branches.md
 > Automatic merge failed; fix conflicts and then commit the result.
 
 File you need to fix:
