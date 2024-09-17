@@ -31,3 +31,6 @@ Note: Name will refer to the url. The common name is "origin".
 `git push -u <name> <local-branch>` or `git push -u <name> <local-branch>:<remote-branch>` it is set your local branch to remote branch. You can use `git push` only.
 
 `git branch -M <new-name>` to change your branch name.
+
+`git branch -r` to view remote branches
+
