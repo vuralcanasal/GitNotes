@@ -3,17 +3,17 @@ GitHub is a hosting platform which you can put your Git repositories and access 
 
 You can use GitHub for:
 - Stay up to date
-- Collabration
+- Collaboration
 - Open source projects
 - Exposure
 
 ## Cloning
-You can clone a remote repository. Whne cloning a repository, you need to be sure that you are not inside of a repository.
+You can clone a remote repository. When cloning a repository, you need to be sure that you are not inside of a repository.
 `git clone <repository-url>`
 
 ## Adding A Remote Repository
-After you worked on your project locally, you can push it your remote repository.
-- Create a new repositoru on your github account.
+After you worked on your project locally, you can push it into your remote repository.
+- Create a new repository on your github account.
 - Add the remote repository on your local.
 
 `git remote add <name> <url>`
@@ -34,7 +34,7 @@ Note: Name will refer to the url. The common name is "origin".
 
 `git branch -r` to view remote branches
 
-## Git Feching & Pulling
+## Git Fetching & Pulling
 You can download changes from a remote repository by using `git fetch <remote>` or `git fetch <remote> <branch>`, those changes is not integrated into your working files.
 
 `git pull <remote> <branch>` updates your HEAD branch with whatever changes are in remote repository.
@@ -43,7 +43,7 @@ You can download changes from a remote repository by using `git fetch <remote>` 
 
 If you use `git pull` without any remote and branch, git assume that remote will default to origin and branch will default to whatever remote branch configured for your current branch.
 
-> Working area --`git add`-> Stageing area
+> Working area --`git add`-> Staging area
 > 
 > Staging area --`git commit`-> Local Repository
 > 
