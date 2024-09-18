@@ -34,10 +34,14 @@ Note: Name will refer to the url. The common name is "origin".
 
 `git branch -r` to view remote branches
 
-## Git Feching
-You can download changes from a remote repository by using `git fetch <remote>`, those changes is not integrated into your working files.
+## Git Feching & Pulling
+You can download changes from a remote repository by using `git fetch <remote>` or `git fetch <remote> <branch>`, those changes is not integrated into your working files.
 
-`git pull <remote>` updates your HEAD branch with whatever changes are.
+`git pull <remote> <branch>` updates your HEAD branch with whatever changes are in remote repository.
+
+`git pull` = `git fetch` + `git merge`
+
+If you use `git pull` without any remote and branch, git assume that remote will default to origin and branch will default to whatever remote branch configured for your current branch.
 
 > Working area --`git add`-> Stageing area
 > 
@@ -48,5 +52,3 @@ You can download changes from a remote repository by using `git fetch <remote>`,
 > Remote Repository --`git fetch`-> Local Repository
 >
 > Remote Repository --`git pull`-> Working area
-
-
