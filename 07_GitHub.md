@@ -7,6 +7,10 @@ You can use GitHub for:
 - Open source projects
 - Exposure
 
+Public repositories can be seen by anyone.
+
+Private repositories can be seen by only owner and people granted access.
+
 ## Cloning
 You can clone a remote repository. When cloning a repository, you need to be sure that you are not inside of a repository.
 `git clone <repository-url>`
@@ -52,3 +56,5 @@ If you use `git pull` without any remote and branch, git assume that remote will
 > Remote Repository --`git fetch`-> Local Repository
 >
 > Remote Repository --`git pull`-> Working area
+
+
