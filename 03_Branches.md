@@ -50,3 +50,12 @@ Why is there a conflicted?
 * Somebody modified a file, and somebody deleted the same file.
 * Somebody edit some lines of some files, and somebody edit same lines of the the same files or one of the same files.
 
+# Git Rebase
+`git rebase` is a kind of merge commit. `git rebase <branch>`
+
+You can use `git rebase` to get a cleaner and linear project history.
+
+!!! You should NOT rebase commits shared with others. !!!
+
+Because rebase change the history.
+
