@@ -51,11 +51,22 @@ Why is there a conflicted?
 * Somebody edit some lines of some files, and somebody edit same lines of the the same files or one of the same files.
 
 # Git Rebase
-`git rebase` is a kind of merge commit. `git rebase <branch>`
+`git rebase` is a kind of merge commit. `git rebase <branch>`.
 
 You can use `git rebase` to get a cleaner and linear project history.
 
 !!! You should NOT rebase commits shared with others. !!!
 
 Because rebase change the history.
+
+Therefore, you can re-write the history by `git rebase`. This is "interactive rebase". `git rebase -i HEAD~<n>`
+
+After you use `git rebase -i HEAD~<n>`, you would see a list of commands you can choose. Here is some common commands:
+- pick: use the commit
+- reword: use the commit, but edit the commit message
+- edit: use commit, but stop for amending
+- fixup: use commit contents, but meld it into previous commit and discard the commit message
+- drop: remove commit
+
+
 
