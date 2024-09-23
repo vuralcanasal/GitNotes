@@ -42,8 +42,8 @@ _The basic workflow for Git is:_
 
 ```mermaid
 graph TD;
-  working directory-->staging area;
-  staging area-->repository;
+  working_directory-->staging_area;
+  staging_area-->repository;
 ```
 
 ### .gitignore
