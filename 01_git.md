@@ -41,7 +41,6 @@ _The basic workflow for Git is:_
    - Commit added changes with a comment by `git commit` command
 
 ```mermaid
-graph TD;
   working_directory-->staging_area;
   staging_area-->repository;
 ```
