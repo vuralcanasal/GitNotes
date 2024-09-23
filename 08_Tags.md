@@ -24,4 +24,5 @@ If you move your tag to another commit, you can use "-f"  option to force it.
 
 `git tag -d <tagname>` to delete a tag.
 
-`git push --tags` to push tags to remote repository. `git push`
+`git push --tags` to push tags to remote repository. `git push <remote> <tag-name>` for one tag.
+
