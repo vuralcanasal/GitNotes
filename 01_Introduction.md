@@ -1,4 +1,4 @@
-(/Git-Icon-1788C.svg)
+![git logo](/Git-Icon-1788C.svg)
 
 # What is Git?
 Git is a tool that tracks changes to files over time. It hepls you view previous versions of files, undo changes, and compare differences.
