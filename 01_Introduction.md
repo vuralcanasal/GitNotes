@@ -1,4 +1,4 @@
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](/Git-Icon-1788C.svg)
+(/Git-Icon-1788C.svg)
 
 # What is Git?
 Git is a tool that tracks changes to files over time. It hepls you view previous versions of files, undo changes, and compare differences.
