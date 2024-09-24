@@ -262,6 +262,23 @@ After you use `git rebase -i HEAD~<n>`, you will see a list of commands you can 
 - fixup: use commit contents, but meld it into the previous commit and discard the commit message
 - drop: remove commit
 
+## Git Stash (like a stack)
+If you need to switch to another branch without committing your work, and it causes a conflict, you can use `git stash` or `git stash save`. Thanks to that, you do not have to make unnecessary commits.
+
+`git stash pop` removes the recently stashed changes and re-apply them to your working area. You can apply them for the same branch or a different branch. After popping, changes are removed from the stash-stack.
+
+`git stash apply` helps you to apply changes without removing changes from the stash. Thanks to that, you can apply the same changes to multiple branches.
+
+__stash stack is first in - first out__
+
+`git stash list` lists all stashes.
+
+`git stash apply stash@{<index number>}` applies the specific changes from stash.
+
+`git stash drop stash@{<index number>}` deletes the specific changes from stash without appling.
+
+`git stash clear` to delete all changes from the stash.
+
 # Git Diff (Comparisons)
 You can see changes between branches, files, etc.
 
@@ -288,7 +305,7 @@ You can see changes between branches, files, etc.
 >
 > +`git diff` shows the changes in your working directory.
 
-The output says you there are changes in 03_Git_Diff.md file. If the line starts with "-", it means that it is the old line from the old version of the file. If the line start with "+", it means that it is the new line from the new version of the file. "# Git Diff" is the old line and "# Git Diff (Comparisons)", "You can see changes between branches, files, etc.", " " and "`git diff` shows the changes in your working directory." are the new lines in 03_Git_Diff.md file. 
+The output says there are changes in 03_Git_Diff.md file. If the line starts with "-", it means that it is the old line from the old version of the file. If the line starts with "+", it means that it is the new line from the new version of the file. "# Git Diff" is the old line and "# Git Diff (Comparisons)", "You can see changes between branches, files, etc.", " " and "`git diff` shows the changes in your working directory." are the new lines in 03_Git_Diff.md file. 
 
 `git diff HEAD` compares the working directory and the last commit.
 
