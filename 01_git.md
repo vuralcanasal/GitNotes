@@ -152,7 +152,7 @@ On branch main
 
 Therefore, we committed 02_Branches.md to the repository with its own message. We can use `git add` and `git commit` to stage and commit changes to the repository with their own messages.
 
-### Git Commit --amend
+## Git Commit --amend
 If you forgot to commit a file, you can use `git commit --amend` to add it to your last commit. For example, if you committed file1 and file2 but forgot file3, just stage file3 and run:
 ```
 git add file3
@@ -227,11 +227,15 @@ Here is the output example of a merge conflict example:
 
 File you need to fix:
 > <<<<<<< HEAD
+>
 > The content from your current HEAD is displayed between:
 > <<<<<<<<< HEAD and ============
+>
 > =======
+>
 > The content from your the branch you try to merge is displayed between:
 > ============ and >>>>>>>>>>>
+>
 > \>\>\>\>\>\>\> merge
 
 You need to resolve it manually. Decide which content you want to keep in each conflict, edit and save the file.
