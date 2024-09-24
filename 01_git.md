@@ -317,3 +317,63 @@ The output says there are changes in 03_Git_Diff.md file. If the line starts wit
 
 `git diff <commit1>..<commit2>` compare two commits.
 
+# Undo
+You can use `git checkout` to create new branches, switch to another branch, restore files, and undo history.
+
+`git checkout commit <commith-hash>` to view a previous commit.
+
+> __DETACHED HEAD__
+>
+> You are in "detached HEAD" state. You can look around, make experimental changes and commit them, and you can discard any commits you make in this state without impacting any branches by switching back to a branch.
+
+This means HEAD points at that commit not at the branch.
+1- You can stay detached HEAD to view old commits.
+2- Re-attach the HEAD.
+3- Create a new branch and switch to it.
+
+To re-attach the HEAD `git switch <branch name>`
+
+To create a new branch `git switch -c <new branch name>`
+
+`git checkout HEAD~n` to view the commit HEAD - n (before n commit)
+
+`git checkout HEAD~n <file name>` to revert a file n step back to its last commit. To discard changes.
+
+`git restore --source HEAD~n <file name>` to revert a file n step back to its last commit. To discard changes.
+
+`git restore --staged <file name>` to move a staged file as an unstaged file.
+
+`git reset <commit hash>` to reset the repo back to a specific commit. The commits are gone, you still have changes. If you have mistakes about your commit (wrong branch, wrong message, etc.), you can use reset.
+
+`git reset --hard <commit hash>` delete last commits and changes.
+
+`git revert <commit hash>` is the same as reset, but revert creates a new comment with the changes.
+
+# Tags
+You can mark a particular moment in time with a tag. Tags are labels for commits. There are two types of tags:
+
+- lightweight tags are just a label that points to a particular commit.
+- annotated tags store extra metadata including the author's name, e-mails, date, and tag message.
+
+You can use tags for version releases, like v2.5.3. According to semantic versioning, the numbers mean that "<major release>.<minor release>.<patch release>" 
+
+`git tag` views a list of all tags.
+
+`git tag -l <pattern>` like `git tag -l <*alpha*>` views a list of all tags including "alpha".
+
+`git checkout <tagname>` to check the changes according to the tagged commit.
+
+`git diff <tagname1> <tagname2>` to check the  changes between tag.
+
+`git tag <tagname>` to create a lightweight tag referring to the commit which HEAD referencing. `git tag <tagname> <commit hash>`
+
+`git tag -a <tagname>` to create an annotated tag referring to the commit which HEAD referencing. `git tag -a <tagname> <commit hash>`. You can use "-m" to set your message like "git commit -m".
+
+`git show <tagname>` to see the details about tag.
+
+If you move your tag to another commit, you can use "-f"  option to force it.
+
+`git tag -d <tagname>` to delete a tag.
+
+`git push --tags` to push tags to the remote repository. `git push <remote> <tag-name>` for one tag.
+
