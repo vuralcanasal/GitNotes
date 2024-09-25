@@ -1,3 +1,5 @@
+![github logo](/images/github-mark.svg)
+
 # GitHub
 GitHub is a hosting platform which you can put your Git repositories and access them from anywhere and share them with others.
 
