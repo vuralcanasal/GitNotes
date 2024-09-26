@@ -18,7 +18,7 @@ You can change your git diff output colors in the config file.
 
 For more information: git-scm.com/docs/git-config
 
-## refs
+## refs/
 The refs folder has a "heads" folder. The heads folder has one file per branch. Each file is named by its branch and has the last commit hash of the branch. For instance, refs/heads/main contains the commit hash of the last commit on the main branch.
 
 The refs folder has another folder for tags, refs/tags containing one file for each tag.
@@ -32,7 +32,7 @@ If the HEAD contains refs/heads/<branch name>, HEAD is pointing to the branch.
 
 If the HEAD contains a commit hash, it means HEAD is detached and pointing to a commit.
 
-## objects
+## objects/
 The objects folder has all the repository files. It has the backups of files, the commits, and more. The files are encrypted.
 
 If you want to retrieve the encrypted "object hash" file, you can use `git cat-file -p <object-hash>`.
@@ -94,7 +94,7 @@ View the tree, `git cat-file -p 5d2029931787500c74eb0fa82991b24c3fd7f678`
 
 Then you can view the contents of the blobs or view the tree "images"...
 
-## logs
+## logs/
 The logs folder stores the reflogs in the repository. In the logs folder, there is a file HEAD. It keeps the HEAD log such as commits, switches, etc. It is readable:
 
 > <vuralcanasal@gmail.com> 1726560823 +0300	checkout: moving from main to origin/main
