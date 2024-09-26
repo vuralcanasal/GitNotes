@@ -130,11 +130,11 @@ Also, You can see the reflogs by `git reflog`. Reflogs are local.
 <name>@{qualifier} to access a specific git ref.
 
 Time Reference:
-<name>@{2.days.ago}
+* <name>@{2.days.ago}
 
-<name>@{one.week.ago}
+* <name>@{one.week.ago}
 
-<name>@{yesterday}
+* <name>@{yesterday}
 
 For example, you can see the differences between now and 2 days ago.
 `git diff main main@{2.days.ago}`
